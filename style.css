@@ -60,3 +60,13 @@ a {
 .header .navbar ul li a:hover {
   color: #e2b2e2;
 }
+
+.showcase-section {
+  background-color: blanchedalmond;
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}

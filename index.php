@@ -28,6 +28,21 @@
                 </ul>
             </nav>            
         </header>
+        <div class="showcase-section">
+        <?php
+        $conn=mysqli_connect('localhost','root',"",'ecommerce');  //connecting to database
+        if(!$conn)
+        {
+            die("could not connect".mysqli_error());
+        }
+        else{
+            echo "connection successfull";
+        }
+
+        ?>
+        <ul><li><img src="images/ecommerce-logo.png"></li></ul>
+    
+        </div>
     
         <footer>
             <a href="" ><center>Douglas254</a> &copy; 2021</center>
