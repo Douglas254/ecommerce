@@ -63,10 +63,20 @@ a {
 
 .showcase-section {
   background-color: blanchedalmond;
+  color: black;
   width: 100%;
   height: auto;
   border-radius: 5%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+}
+
+.showcase-section ul {
+  border-radius: 30%;
+  background-color: blue;
+  border: 2px solid black;
+}
+.showcase-section ul img {
+  border-radius: 40%;
 }

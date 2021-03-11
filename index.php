@@ -36,6 +36,7 @@
             die("could not connect".mysqli_error());
         }
         else{
+            // echo "connection successful"
             $sql="select * from products";
             $query=mysqli_query($conn,$sql);
             if(!$query)
@@ -43,12 +44,25 @@
                 echo "There was an error";
             }
             else{
-                echo "successfull";
+                // echo "successfull";
+                while($row=mysqli_fetch_assoc($query)) //fetching data from the database and put in the row variable
+                { 
+                    $path=$row['image'];
+                    echo "<ul><li><img src='$path'></li><center><li>";
+                    echo $row['product_name'];
+                    echo "</li><li><strike>Ksh";
+                    echo $row['old_price'];
+                    echo "</li></strike><li> Ksh";
+                    echo $row['new_price'];
+                    echo "</li></center>";
+                    echo "</ul>";
+                } 
+                
             }
         }
 
         ?>
-        <ul><li><img src="images/ecommerce-logo.png"></li></ul>
+        
     
         </div>
     
