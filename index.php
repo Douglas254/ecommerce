@@ -36,7 +36,15 @@
             die("could not connect".mysqli_error());
         }
         else{
-            echo "connection successfull";
+            $sql="select * from products";
+            $query=mysqli_query($conn,$sql);
+            if(!$query)
+            {
+                echo "There was an error";
+            }
+            else{
+                echo "successfull";
+            }
         }
 
         ?>
