@@ -15,8 +15,8 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="logo">
-                <a href="#"><img src="images/ecommerce-logo.png" alt="ecommerce logo" style="width:30%;height:120px;border: 5px solid black;border-radius:60%;"/><a/>
+            <div>
+                <a href="#"><img src="images/ecommerce-logo.png" alt="ecommerce logo" class="logo"/></a>
             </div>   
             <nav class="navbar">
                 <ul>

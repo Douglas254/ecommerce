@@ -24,13 +24,18 @@ a {
   /* box-shadow: 0px 0px 4px 0px rgb(128, 128, 128); */
 }
 
-.header .logo {
-  width: 40%;
+.logo {
+  /* width: 40%; */
+  width: 155px;
+  height: 90px;
+  border: 2px solid black;
+  border-radius: 60%;
 }
 
 .header .navbar ul {
   display: flex;
   align-items: center;
+  padding-top: 30px;
 }
 
 .header .navbar ul .login-reg-btn {
@@ -64,6 +69,7 @@ a {
 .showcase-section {
   background-color: blanchedalmond;
   color: black;
+  font-size: 20px;
   width: 100%;
   height: auto;
   border-radius: 5%;
@@ -73,10 +79,24 @@ a {
 }
 
 .showcase-section ul {
-  border-radius: 30%;
-  background-color: blue;
+  border-radius: 10%;
+  background-color: white;
   border: 2px solid black;
 }
-.showcase-section ul img {
-  border-radius: 40%;
+.showcase-section ul li img {
+  width: 250px;
+  border-radius: 20%;
+  position: relative;
+  left: 7px;
+}
+
+.showcase-section ul li img:hover {
+  border-radius: 20%;
+  box-shadow: 0 5px 20px black;
+  transition: box-shadow 0.4s;
+}
+footer {
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
 }
