@@ -12,61 +12,57 @@
                         <h1>Registration Form</h1>
                     </div>
                     <div class="panel-body">
-                        <form>
+                        <form action="RegistrationForm.php" method="POST">
                             <div class="form-group">
                                 <label for="firstName">First Name</label>
-                                <input type="text" class="form-control" id="firstName" name="First_Name"/>
+                                <input type="text" class="form-control" id="firstName" name="First_Name" autocomplete="off" required/>
                             </div>
                             <div class="form-group">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" name="Last_Name"/>
+                                <label for="lastName">Second Name</label>
+                                <input type="text" class="form-control" id="secondName" name="Second_Name" autocomplete="off" required/>
                             </div>
                             <div class="form-group">
                                 <label for="username">Username</label>
-                                <input type="text" class="form-control" id="username" name="Username"/>
+                                <input type="text" class="form-control" id="username" name="Username" autocomplete="off" required/>
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" name="Password"/>
+                                <input type="password" class="form-control" id="password" name="Password" autocomplete="off" required/>
                             </div>
                             <div class="form-group">
                                 <label for="confirm_password">Confirm Password</label>
-                                <input type="password" class="form-control" id="confirm_password" name="Confirm_Password"/>
+                                <input type="password" class="form-control" id="confirm_password" name="Confirm_Password" autocomplete="off" required/>
                             </div>
                             <div class="form-group">
                                 <label for="id_number">ID Number</label>
-                                <input type="text" class="form-control" id="id_number" name="ID_Number"/>
+                                <input type="text" class="form-control" id="id_number" maxlength="8" name="ID_Number" autocomplete="off" required/>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="text" class="form-control" id="email" name="Email"/>
+                                <input type="text" class="form-control" id="email" name="Email" autocomplete="off" required/>
                             </div>
                             <div class="form-group">
                                 <label for="phone_number">Phone Number</label>
-                                <input type="text" class="form-control" id="number" name="Phone_Number"/>
+                                <input type="text" class="form-control" id="number" maxlength="10" name="Phone_Number" autocomplete="off" required/>
                             </div>
                             <div class="form-group">
                                 <label for="county">County</label>
-                                <input type="text" class="form-control" id="county" name="County"/>
+                                <input type="text" class="form-control" id="county" name="County" autocomplete="off" required/>
                             </div>
                             <div class="form-group">
                                 <label for="gender">Gender</label>
                                 <div>
                                     <label for="male" class="radio-inline">
-                                    <input type="radio" name="gender" value="m" id="male"/>Male</label>
+                                    <input type="radio" name="Gender" value="Male" id="male" required/>Male</label>
                                     <label for="female" class="radio-inline">
-                                    <input type="radio" name="gender" value="f"id="female" />Female</label>
+                                    <input type="radio" name="Gender" value="Female"id="female" required/>Female</label>
                                     <label for="others" class="radio-inline">
-                                    <input type="radio" name="gender" value="o" id="others"/>Others</label>
+                                    <input type="radio" name="Gender" value="Others" id="others" required/>Others</label>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="county">County</label>
-                                <input type="text" class="form-control" id="county" name="County"/>
-                            </div>
-                            <div class="form-group">
                                 <label for="age">Age</label>
-                                <input type="text" class="form-control" id="age" name="Age"/>
+                                <input type="text" class="form-control" id="age" maxlength="2" name="Age" autocomplete="off" required/>
                             </div>
                             <input type="submit" class="btn btn-primary" />
                         </form>
