@@ -30,6 +30,7 @@
         </header>
         <div class="showcase-section">
             <?php
+         
                 $conn=mysqli_connect('localhost','root',"",'ecommerce');  //connecting to database
                 if(!$conn)
                 {

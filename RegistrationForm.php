@@ -1,5 +1,7 @@
 <?php
-
+?>
+<meta http-equiv="refresh" content="1;url=login.php" />
+<?php
     $host = "localhost"; //hosting server address
     $username = "root"; //The username of the hosting server
     $password = ""; //The password of the hosting web server
@@ -27,6 +29,7 @@
             //to display an allert in php
             $appreciation = "Thank you $Username for registering with us";
             echo "<script type='text/javascript'>alert('$appreciation');</script>";
+            
         }
         else{
             //if the data has not been inserted execute the statement below
