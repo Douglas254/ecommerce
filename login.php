@@ -48,6 +48,7 @@
                                     {
                                         // echo "Login successful";
                                         $_SESSION['login_user']=$username;// registers a session
+                                        header("location:index.php");
                                     }
                                     else{
                                         $error="Please check your username and password";

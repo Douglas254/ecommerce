@@ -25,12 +25,16 @@
                     <li><a href=""><i class="icon-phone"></i>Contact us</a></li>
                     <button type="button" class="login-reg-btn"><i class="icon-user"></i><a href="login.php"> Log In</a></button>
                     <button class="login-reg-btn"><a href="#"><i class="icon-shopping-cart" style="font-size:15px;margin-left:10px;color:black"></i> Cart</a></button>
+                    <li style=""><center><a href="#" onclick="display()"><i class="icon-user" style="font-size:15px"><?php session_start(); if(isset($_SESSION['login_user'])){ echo $_SESSION['login_user'];} else{ echo "";} ?></i></a></center>
+                        <ul id="logout">
+                            <li><a href="logout.php"><i class="icon-signout"></i>Logout</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>            
         </header>
         <div class="showcase-section">
             <?php
-         
                 $conn=mysqli_connect('localhost','root',"",'ecommerce');  //connecting to database
                 if(!$conn)
                 {
@@ -68,6 +72,10 @@
             <a href="" ><center>Douglas254</a> &copy; 2021</center>
         </footer>
     </div>
-
+<script>
+    function display(){
+document.querySelector("ul > li > ul > li").style.display="inline-block";
+    }
+</script>
 </body>
 </html>
